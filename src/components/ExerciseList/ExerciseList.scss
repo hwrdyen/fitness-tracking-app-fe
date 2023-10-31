@@ -1,0 +1,22 @@
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variable" as *;
+
+.ExerciseTypeList {
+  &__container {
+    @include mobile {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin: 10px;
+    }
+    @include tablet {
+    }
+    @include desktop {
+    }
+  }
+}

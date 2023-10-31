@@ -1,0 +1,89 @@
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variable" as *;
+
+.ExerciseBubble {
+  &__container {
+    @include mobile {
+    }
+    @include tablet {
+    }
+    @include desktop {
+    }
+  }
+
+  &__info {
+    &--container {
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+      }
+      @include tablet {
+      }
+      @include desktop {
+      }
+    }
+
+    &--icon {
+      @include mobile {
+        background-color: $fitness-black;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+      }
+      @include tablet {
+      }
+      @include desktop {
+      }
+    }
+
+    &--title {
+      @include mobile {
+        font-size: 12px;
+        font-weight: 600;
+        text-align: center;
+      }
+      @include tablet {
+      }
+      @include desktop {
+      }
+    }
+  }
+
+  &__link {
+    @include mobile {
+      color: $fitness-black;
+    }
+    @include tablet {
+    }
+    @include desktop {
+    }
+
+    &:visited {
+      @include mobile {
+        color: $fitness-black;
+      }
+      @include tablet {
+      }
+      @include desktop {
+      }
+    }
+
+    &:hover {
+      @include mobile {
+        color: grey;
+      }
+      @include tablet {
+      }
+      @include desktop {
+      }
+    }
+  }
+}

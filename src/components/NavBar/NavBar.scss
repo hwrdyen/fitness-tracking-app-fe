@@ -1,0 +1,71 @@
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variable" as *;
+
+.NavBar {
+  &__container {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: $fitness-graphite;
+      color: white;
+      padding: 24px 16px;
+    }
+    @include tablet {
+    }
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__nav {
+    &--container {
+      @include mobile {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+      }
+      @include tablet {
+      }
+      @include desktop {
+      }
+    }
+  }
+
+  &__link {
+    @include mobile {
+      color: $fitness-slate;
+      border-radius: 20px;
+      padding: 8px;
+    }
+    @include tablet {
+    }
+    @include desktop {
+    }
+
+    &:visited {
+      @include mobile {
+        color: $fitness-slate;
+      }
+      @include tablet {
+      }
+      @include desktop {
+      }
+    }
+
+    &:hover {
+      @include mobile {
+        color: $fitness-white;
+        background-color: $fitness-black;
+      }
+      @include tablet {
+      }
+      @include desktop {
+      }
+    }
+  }
+}

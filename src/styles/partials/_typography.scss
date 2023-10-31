@@ -1,15 +1,15 @@
 @use "variable" as *;
 
-//Font SemiBold 
+//Font SemiBold
 @font-face {
-    font-family: "TitilliumWeb-SemiBold";
-    src: url(../../assets/Fonts/TitilliumWeb-SemiBold.ttf) format("truetype");
-    font-weight: 600;
+  font-family: "TitilliumWeb-SemiBold";
+  src: url(../../assets/fonts/TitilliumWeb-SemiBold.ttf) format("truetype");
+  font-weight: 600;
 }
 
 //Font Regular
 @font-face {
-    font-family: "TitilliumWeb-Regular";
-    src: url(../../assets/Fonts/TitilliumWeb-Regular.ttf) format("truetype");
-    font-weight: 400;
+  font-family: "TitilliumWeb-Regular";
+  src: url(../../assets/fonts/TitilliumWeb-Regular.ttf) format("truetype");
+  font-weight: 400;
 }
