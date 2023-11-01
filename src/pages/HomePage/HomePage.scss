@@ -1,0 +1,156 @@
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variable" as *;
+
+.HomePage {
+  &__container {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin: 0px 16px;
+    }
+    @include tablet {
+    }
+    @include desktop {
+      margin: 32px 130px;
+      gap: 30px;
+    }
+  }
+
+  &__title {
+    &--container {
+      @include mobile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      @include tablet {
+      }
+      @include desktop {
+      }
+    }
+
+    &--titlecontainer {
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      @include tablet {
+      }
+      @include desktop {
+        gap: 16px;
+      }
+    }
+
+    &--title {
+      @include mobile {
+        font-size: 28px;
+        font-weight: 600;
+      }
+      @include tablet {
+      }
+      @include desktop {
+        font-size: 55px;
+        font-weight: 600;
+      }
+    }
+
+    &--subtitle {
+      @include mobile {
+        font-weight: 600;
+      }
+      @include tablet {
+      }
+      @include desktop {
+      }
+    }
+
+    &--button {
+      @include mobile {
+        background-color: $fitness-blue;
+        color: white;
+        border-radius: 20px;
+        padding: 8px 16px;
+      }
+      @include tablet {
+      }
+      @include desktop {
+        max-width: 250px;
+      }
+    }
+
+    &--image {
+      @include mobile {
+        width: 200px;
+        height: 200px;
+      }
+      @include tablet {
+      }
+      @include desktop {
+        width: 400px;
+        height: 400px;
+      }
+    }
+  }
+
+  &__demo {
+    @include mobile {
+      width: 30%;
+      height: auto;
+    }
+    @include tablet {
+    }
+    @include desktop {
+    }
+
+    &--container {
+      @include mobile {
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+        margin-left: 16px;
+        margin-right: 16px;
+      }
+      @include tablet {
+      }
+      @include desktop {
+      }
+    }
+
+    &--image {
+      @include mobile {
+        width: 100%;
+        border-radius: 20px;
+      }
+      @include tablet {
+      }
+      @include desktop {
+      }
+    }
+
+    &--title {
+      @include mobile {
+        font-weight: 600;
+      }
+      @include tablet {
+      }
+      @include desktop {
+      }
+    }
+  }
+
+  &__demo:hover {
+    @include mobile {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+    @include tablet {
+    }
+    @include desktop {
+    }
+  }
+}
